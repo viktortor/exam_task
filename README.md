@@ -11,23 +11,33 @@ Find in google.com «ChromeDriver» or download installation package from: https
 5. Install Selenium WD
 Find in google.com «selenium webdriver» or download installation package from: https://www.seleniumhq.org/download/
 Extract the content from downloaded file to your directory
-6. Start Intellij idea and create new maven project:
-6.1 File - New - Project
-6.2 choose Maven and click Next
-6.3 enter GroupId and ArtifactId. Click Finish
-7. Clone project from GitHub with HTTPS:
-7.1 VCS - Checkout from Version Control - Git
-7.2 Enter link into field URL - https://github.com/viktortor/exam_task.git
-7.3 click Clone button
-7.4 Choose your directory
-7.5 Import project from external model
-7.6 Mark Maven and click Next
-7.7 Click Next
-7.8 Click Next
-7.9 Click Next
-7.10 Click Finish
+6. Install Apache Maven
+Find in google.com «apache maven» or download installation package from: https://maven.apache.org/download.cgi
+Extract the content from downloaded file to your directory
+7. Install Git utility
+Download installation package from: https://gitforwindows.org/
+8. Make sure utilities are included into your PATH variable
+*<path to>\selenium-java-3.14.0
+*<path to>\chromedriver_win32
+*<path to>\Git\cmd
+*<path to>\apache-maven-3.5.4\bin
+9. Start Intellij idea and create new maven project:
+9.1 File - New - Project
+9.2 choose Maven and click Next
+9.3 enter GroupId and ArtifactId. Click Finish
+10. Clone project from GitHub with HTTPS:
+10.1 VCS - Checkout from Version Control - Git
+10.2 Enter link into field URL - https://github.com/viktortor/exam_task.git
+10.3 click Clone button
+10.4 Choose your directory
+10.5 Import project from external model
+10.6 Mark Maven and click Next
+10.7 Click Next
+10.8 Click Next
+10.9 Click Next
+10.10 Click Finish
 
-You have two ways to run these tests:
+You have three ways to run these tests:
 - use login-test-2-browsers.xml
     *mark login-test-2-browsers.xml
     *open Context Menu
@@ -37,5 +47,9 @@ You have two ways to run these tests:
     *find annotation @Test
     *open @Test Context Menu
     *choose Run 'successfullSearchTest()'
+- use command line:
+    *go to terminal in intellij idea
+    *execute command: mvn clean install
+
 
 
