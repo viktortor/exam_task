@@ -48,7 +48,6 @@ public class GoogleSearchResultsPage extends GoogleBasePage{
         for (WebElement searchResult : searchResults) {
             ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", searchResult);
             searchResultsList.add(searchResult.getText());
-            System.out.println(searchResult.getText());
         }
         return searchResultsList;
     }
